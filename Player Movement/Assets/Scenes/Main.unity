@@ -556,8 +556,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e17cf6231effeb846a3a270f578e3a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCamera
-  XSensitivity: 150
-  YSensitivity: 150
+  XSensitivity: 100
+  YSensitivity: 100
   PlayerOrientation: {fileID: 1489513483}
   XRotation: 90
   YRotation: 90
@@ -887,6 +887,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1358901556}
   - component: {fileID: 1358901557}
+  - component: {fileID: 1358901558}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -937,8 +938,22 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1358901558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358901555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53a6fe5c941544478b80ed60e51f249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  MoveSpeed: 2
+  PlayerOrientation: {fileID: 1489513483}
 --- !u!1 &1452114963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +1018,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452114963}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
