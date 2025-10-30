@@ -438,6 +438,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.7f2/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/CameraPosition.cs"
+"Assets/Scripts/DestroyOnCollision.cs"
 "Assets/Scripts/PlayerCamera.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
