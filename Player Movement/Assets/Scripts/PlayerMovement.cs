@@ -26,7 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        //MovePlayer();
+        transform.Translate(PlayerOrientation.forward * VertInput * MoveSpeed *  Time.deltaTime);
     }
 
     private void Inputs()
@@ -41,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         //Calculates the direction in which to move the charachter
         moveDirection = PlayerOrientation.forward * VertInput + PlayerOrientation.right * HoriInput;
         rb.AddForce (moveDirection.normalized * MoveSpeed * 10f, ForceMode.Force);
+        
     }
    
 }
